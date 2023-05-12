@@ -75,6 +75,7 @@ public class MovieManagerTest {
         Assertions.assertArrayEquals(expected, actual);
 
     }
+
     @Test
     public void ShouldTestOverLimitLastMovie() {
         String movie1 = "Movie 1";
@@ -110,6 +111,7 @@ public class MovieManagerTest {
 
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void ShouldTestOnLimitLastMovie() {
         String movie1 = "Movie 1";
@@ -137,7 +139,7 @@ public class MovieManagerTest {
         manager.addMovie(movie10);
 
 
-        String[] expected = {"Movie 10", "Movie 9", "Movie 8", "Movie 7", "Movie 6", "Movie 5", "Movie 4", "Movie 3", "Movie 2","Movie 1"};
+        String[] expected = {"Movie 10", "Movie 9", "Movie 8", "Movie 7", "Movie 6", "Movie 5", "Movie 4", "Movie 3", "Movie 2", "Movie 1"};
         String[] actual = manager.findLastMovie();
 
 

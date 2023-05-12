@@ -10,6 +10,7 @@ public class MovieManager {
         this.limit = 10;
 
     }
+
     public MovieManager(int limit) {
         this.limit = limit;
 
@@ -34,8 +35,7 @@ public class MovieManager {
         int resultLength;
         if (movie.length < limit) {
             resultLength = movie.length;
-        }
-        else {
+        } else {
             resultLength = limit;
         }
         String[] tmp = new String[resultLength];
